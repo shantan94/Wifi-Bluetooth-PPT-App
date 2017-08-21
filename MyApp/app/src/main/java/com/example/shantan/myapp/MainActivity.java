@@ -39,14 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button slide_show = null;
     private Button exit_slide_show = null;
     private TextView t1 = null;
-//    private final static int REQUEST_ENABLE_BT = 1;
-//    private static String btAdress = "A4:02:B9:78:2B:CE";
-//    public BluetoothDevice device;
-//    private static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
     public OutputStream outputStream;
     public InputStream inStream;
-//    public BluetoothSocket btSocket;
-//    public BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
     public String ip = "";
     public int port = 0;
     public int index = 1;
@@ -127,26 +121,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(getApplicationContext(), "Reached max length", Toast.LENGTH_SHORT).show();
                 Log.d("status","Max length reached");
             }
-//            Set<BluetoothDevice> bondedDevices = mBluetoothAdapter.getBondedDevices();
-//
-//            if(bondedDevices.size() > 0) {
-//                Object[] devices = (Object[]) bondedDevices.toArray();
-//                BluetoothDevice device = (BluetoothDevice) devices[4];
-//                ParcelUuid[] uuids = device.getUuids();
-//                BluetoothSocket socket = null;
-//                try {
-//                    Log.d("device",device+"");
-//                    socket = device.createInsecureRfcommSocketToServiceRecord(uuids[0].getUuid());
-//                    Log.d("UDID",uuids[0].getUuid()+"");
-//                    socket.connect();
-//                    outputStream = socket.getOutputStream();
-//                    inStream = socket.getInputStream();
-//                    outputStream.write("kfnvkfd".getBytes());
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//            socket = device.createRfcommSocketToServiceRecord(UUID.fromString("a60f35f0-b93a-11de-8a39-08002009c666"));
         }
         else if(view == back){
             TextView t1 = (TextView)findViewById(R.id.current_slide);

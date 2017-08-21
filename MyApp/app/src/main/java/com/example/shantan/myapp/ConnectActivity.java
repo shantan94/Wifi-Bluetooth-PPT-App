@@ -98,10 +98,6 @@ public class ConnectActivity extends AppCompatActivity implements View.OnClickLi
                 Intent next = new Intent(getApplicationContext(), MainActivity1.class);
                 next.putExtras(store);
                 startActivity(next);
-//                out = btSocket.getOutputStream();
-//                byte[] buffer = "hello".getBytes();
-//                out.write(buffer);
-//                out.flush();
             }
             catch (Exception ex){
                 ex.printStackTrace();

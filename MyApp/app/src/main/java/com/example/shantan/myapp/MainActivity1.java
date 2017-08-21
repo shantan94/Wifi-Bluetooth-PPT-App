@@ -121,26 +121,6 @@ public class MainActivity1 extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(getApplicationContext(), "Reached max length", Toast.LENGTH_SHORT).show();
                 Log.d("status","Max length reached");
             }
-//            Set<BluetoothDevice> bondedDevices = mBluetoothAdapter.getBondedDevices();
-//
-//            if(bondedDevices.size() > 0) {
-//                Object[] devices = (Object[]) bondedDevices.toArray();
-//                BluetoothDevice device = (BluetoothDevice) devices[4];
-//                ParcelUuid[] uuids = device.getUuids();
-//                BluetoothSocket socket = null;
-//                try {
-//                    Log.d("device",device+"");
-//                    socket = device.createInsecureRfcommSocketToServiceRecord(uuids[0].getUuid());
-//                    Log.d("UDID",uuids[0].getUuid()+"");
-//                    socket.connect();
-//                    outputStream = socket.getOutputStream();
-//                    inStream = socket.getInputStream();
-//                    outputStream.write("kfnvkfd".getBytes());
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//            socket = device.createRfcommSocketToServiceRecord(UUID.fromString("a60f35f0-b93a-11de-8a39-08002009c666"));
         }
         else if(view == back){
             TextView t1 = (TextView)findViewById(R.id.current_slide);
