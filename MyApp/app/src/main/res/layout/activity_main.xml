@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:text="Forward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forward" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back" />
+
+    <TextView
+        android:text="Go To Slide:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:text="1"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:hint="Enter slide number"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_slide"/>
+
+    <Button
+        android:text="Go To Slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/go_to_slide"/>
+
+    <Button
+        android:text="Enter Slide Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide_show"/>
+
+    <Button
+        android:text="Exit Slide Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit_slide_show"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_slide" />
+
+    <TextView
+        android:text=""
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_slides" />
+
+</LinearLayout>
